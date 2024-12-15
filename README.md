@@ -82,10 +82,10 @@ lin-reg-spt/
 
 Navigate to the `single_linear_regression` directory and run the script:
 ```sh
-python multiple_linear_regression_2vars.py
+python single_linear_regression.py
 ```
 ### Multiple Linear Regression (2 variables)
-Navigate to the `smultiple_linear_regression_2vars` directory and run the script:
+Navigate to the `multiple_linear_regression_2vars` directory and run the script:
 ```sh
 python multiple_linear_regression_2vars.py
 ```
