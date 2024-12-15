@@ -2,7 +2,7 @@
 
 ---
 
-# **Regression Analysis Project**
+# **Spotify Tracks Regression Analysis Project**
 
 This repository demonstrates three types of regression analysis using Python:
 1. **Linear Regression**
@@ -19,130 +19,81 @@ The project focuses on training and evaluating regression models with:
 ## **Project Structure**
 
 ```
-regression-analysis-project/
+lin-reg-spt/
 │
-├── README.md                      # Project overview
-├── requirements.txt               # Python dependencies
-├── data/                          # Datasets used in the analysis
-│   └── dataset.csv
+├── README.md                      
+├── LICENSE                      
+├── requirements.txt            
+├── data/                         
+│   └── dataset.csv/                       
+│ 
+├── single_linear_regression/ 
+│   ├── single_linear_regression.py
+│   ├── results/
+│       ├── actual_vs_predicted.png
+│       ├── correlation_matrix.png 
+│       ├── scatter_plot_valence_vs_danceability.png
 │
-├── src/                           # Source code for the project
-│   ├── utils/                     # Shared utilities
-│   │   ├── data_preprocessing.py  # Functions for loading and cleaning data
-│   │   ├── evaluation.py          # MSE and RMSE calculation
-│   │   └── visualisation.py       # Functions to create plots
-│   │
-│   ├── linear_regression/         # Code for Linear Regression analysis
-│   │   ├── linear_model.py        # Model training script
-│   │   └── main_linear.py         # Main script to run analysis
-│   │
-│   ├── multiple_regression_two/   # Code for Multiple Regression (2 variables)
-│   │   ├── multiple_model_two.py  # Model training script
-│   │   └── main_multiple_two.py   # Main script to run analysis
-│   │
-│   └── multiple_regression_many/  # Code for Multiple Regression (> 2 variables)
-│       ├── multiple_model_many.py # Model training script
-│       └── main_multiple_many.py  # Main script to run analysis
+├── multiple_linear_regression_2vars/
+│   ├── multiple_linear_regression_2vars.py
+│   ├── results/
+│       ├── actual_vs_predicted_3d.png
+│       ├── regression_plane_3d_plot.png
 │
-└── results/                       # Results for each regression type
-    ├── linear_regression/
-    │   ├── linear_metrics.json           # Evaluation metrics
-    │   ├── linear_plot.png               # Actual vs Predicted scatter plot
-    │   └── linear_summary.txt            # Text summary of results
-    │
-    ├── multiple_regression_two/
-    │   ├── multiple_two_metrics.json
-    │   ├── multiple_two_plot.png
-    │   └── multiple_two_summary.txt
-    │
-    └── multiple_regression_many/
-        ├── multiple_many_metrics.json
-        ├── multiple_many_plot.png
-        └── multiple_many_summary.txt
+├── multiple_linear_regression_more_vars/
+│   ├── multiple_linear_regression_more_vars.py
+│   ├── results/
+│       ├── actual_vs_predicted.png
+│       ├── correlation_matrix.png
+│       ├── scatter_plot_speechiness_vs_valence.png
+│
+└── docs/                      
+    ├── single_linear_regression.md
+    ├── multiple_linear_regression_2vars.md
+    ├── multiple_linear_regression_more_vars.md
+
 ```
 
 ---
 
-## **How to Use**
+## Repository Structure 
+- `data/`: Contains the dataset used for analysis.
+- `single_linear_regression/`: Contains the script and results for single linear regression analysis.
+- `multiple_linear_regression_2vars/`: Contains the script and results for multiple linear regression with 2 variables.
+- `multiple_linear_regression_more_vars/`: Contains the script and results for multiple linear regression with more than 2 variables.
+- `docs/`: Additional documentation explaining each
 
-### **1. Install Dependencies**
-Clone this repository and install the required Python libraries:
-```bash
-git clone https://github.com/yourusername/regression-analysis-project.git
-cd regression-analysis-project
-pip install -r requirements.txt
+## Setup Instructions 
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/linear-regression-analysis.git
+
+2. Navigate to the project directory:
+   ```sh
+   cd linear-regression-analysis
+   
+3. Install the required libraries:
+   ```sh
+   pip install -r requirements.txt
+
+## Running the Analyses
+
+### Single Linear Regression
+
+Navigate to the `single_linear_regression` directory and run the script:
+```sh
+python multiple_linear_regression_2vars.py
 ```
-
-### **2. Add Your Dataset**
-Place your dataset in the `data/` folder and name it `dataset.csv`. Ensure the dataset includes the appropriate features and target variable for analysis.
-
-### **3. Run the Analysis**
-Run the main scripts for each type of regression:
-- **Linear Regression**:
-  ```bash
-  python src/linear_regression/main_linear.py
-  ```
-- **Multiple Regression (2 variables)**:
-  ```bash
-  python src/multiple_regression_two/main_multiple_two.py
-  ```
-- **Multiple Regression (> 2 variables)**:
-  ```bash
-  python src/multiple_regression_many/main_multiple_many.py
-  ```
-
-### **4. View Results**
-Results will be saved in the `results/` directory:
-- **`metrics.json`**: Contains MSE and RMSE values.
-- **`plot.png`**: Scatter plot of actual vs predicted values.
-- **`summary.txt`**: Text summary of the model's performance.
-
----
-
-## **Example Outputs**
-
-### **Metrics**
-**Example: `results/linear_regression/metrics.json`**
-```json
-{
-    "MSE": 25.3421,
-    "RMSE": 5.0342
-}
+### Multiple Linear Regression (2 variables)
+Navigate to the `smultiple_linear_regression_2vars` directory and run the script:
+```sh
+python multiple_linear_regression_2vars.py
 ```
-
-### **Plot**
-A scatter plot comparing the actual vs predicted values:
-
-![Actual vs Predicted](results/linear_regression/plot.png)
-
-### **Summary**
-**Example: `results/linear_regression/summary.txt`**
+### Multiple Linear Regression (more than 2 variables)
+Navigate to the `multiple_linear_regression_more_vars` directory and run the script:
+```sh
+python multiple_linear_regression_more_vars.py
 ```
-Linear Regression Results
-Mean Squared Error (MSE): 25.3421
-Root Mean Squared Error (RMSE): 5.0342
-```
-
----
-
-## **Directory Details**
-
-### **1. `data/`**
-This folder contains the dataset(s) used for training and testing the models.
-
-### **2. `src/`**
-- **`utils/`**: Contains helper functions for data preprocessing, evaluation, and plotting.
-- **`linear_regression/`**: Scripts for linear regression analysis.
-- **`multiple_regression_two/`**: Scripts for multiple regression analysis with 2 variables.
-- **`multiple_regression_many/`**: Scripts for multiple regression analysis with more than 2 variables.
-
-### **3. `results/`**
-Each regression type has its own folder containing:
-- `metrics.json`: Evaluation metrics (MSE and RMSE).
-- `plot.png`: Scatter plot of actual vs predicted values.
-- `summary.txt`: Text summary of the results.
-
----
 
 ## **Dependencies**
 The following Python libraries are required:
@@ -159,5 +110,9 @@ This project demonstrates my skills in:
 - Building and evaluating regression models
 - Modularising code for reusability
 - Presenting results in a clear and concise format
+
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 Feel free to explore the repository and contact me for further discussion!
