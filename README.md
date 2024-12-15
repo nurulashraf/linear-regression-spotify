@@ -66,11 +66,11 @@ lin-reg-spt/
 ## Setup Instructions 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/linear-regression-analysis.git
+   git clone https://github.com/nurulashraf/lin-reg-spt.git
 
 2. Navigate to the project directory:
    ```sh
-   cd linear-regression-analysis
+   cd lin-reg-spt
    
 3. Install the required libraries:
    ```sh
