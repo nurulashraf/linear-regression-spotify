@@ -61,7 +61,7 @@ lin-reg-spt/
 - `single_linear_regression/`: Contains the script and results for single linear regression analysis.
 - `multiple_linear_regression_2vars/`: Contains the script and results for multiple linear regression with 2 variables.
 - `multiple_linear_regression_more_vars/`: Contains the script and results for multiple linear regression with more than 2 variables.
-- `docs/`: Additional documentation explaining each
+- `docs/`: Additional documentation explaining each analysis
 
 ## Setup Instructions 
 1. Clone the repository:
