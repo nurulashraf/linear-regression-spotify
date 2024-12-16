@@ -19,7 +19,7 @@ The project focuses on training and evaluating regression models with:
 ## **Project Structure**
 
 ```
-lin-reg-spt/
+linear-regression-spotify/
 │
 ├── README.md                      
 ├── LICENSE                      
@@ -66,11 +66,11 @@ lin-reg-spt/
 ## Setup Instructions 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/nurulashraf/lin-reg-spt.git
+   git clone https://github.com/nurulashraf/linear-regression-spotify.git
 
 2. Navigate to the project directory:
    ```sh
-   cd lin-reg-spt
+   cd linear-regression-spotify
    
 3. Install the required libraries:
    ```sh
