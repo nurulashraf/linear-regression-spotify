@@ -9,21 +9,22 @@ This repository contains an analysis of Spotify data using linear regression tec
 
 ```plaintext
 linear-regression-spotify/
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── data/
-│   └── dataset.csv
-├── single_linear_regression.ipynb
-├── multiple_linear_regression_2vars.ipynb
-└── multiple_linear_regression_more_vars.ipynb
+├── README.md                                           # Main documentation file
+├── LICENSE                                             # Licensing information
+├── requirements.txt                                    # Dependencies
+├── data/                                               # Directory for datasets
+│   └── spotify_track.csv                               # Dataset file
+├── src/                                                # Source code directory
+│   ├── single_linear_regression.ipynb                  
+│   ├── multiple_linear_regression_2vars.ipynb           
+│   └── multiple_linear_regression_more_vars.ipynb      
 ```
 
 ### File Descriptions
-- **`data/dataset.csv`**: Contains the Spotify data used in the analysis.
-- **`single_linear_regression.ipynb`**: Demonstrates a single-variable linear regression model.
-- **`multiple_linear_regression_2vars.ipynb`**: Explores a linear regression model with two variables.
-- **`multiple_linear_regression_more_vars.ipynb`**: Applies a linear regression model with multiple variables.
+- **`data/spotify_track.csv`**: Contains the Spotify data used in the analysis.
+- **`src/single_linear_regression.ipynb`**: Demonstrates a single-variable linear regression model.
+- **`src/multiple_linear_regression_2vars.ipynb`**: Explores a linear regression model with two variables.
+- **`src/multiple_linear_regression_more_vars.ipynb`**: Applies a linear regression model with multiple variables.
 
 ---
 
