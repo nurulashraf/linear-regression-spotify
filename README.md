@@ -1,118 +1,112 @@
 
+# Linear Regression Analysis on Spotify Dataset
+
+This repository contains an analysis of Spotify data using linear regression techniques. The analysis is performed using Jupyter Notebooks (`.ipynb`), making it easy to follow along with the steps and reproduce the results.
 
 ---
 
-# **Spotify Tracks Regression Analysis Project**
+## Repository Structure
 
-This repository demonstrates three types of regression analysis using Python:
-1. **Linear Regression**
-2. **Multiple Regression (2 variables)**
-3. **Multiple Regression (more than 2 variables)**
-
-The project focuses on training and evaluating regression models with:
-- **Metrics**: Mean Squared Error (MSE) and Root Mean Squared Error (RMSE)
-- **Visualisation**: Scatter plots comparing actual vs predicted values
-- **Summaries**: Text-based results to summarise the performance
-
----
-
-## **Project Structure**
-
-```
+```plaintext
 linear-regression-spotify/
-│
-├── README.md                      
-├── LICENSE                      
-├── requirements.txt            
-├── data/                         
-│   └── dataset.csv/                       
-│ 
-├── single_linear_regression/ 
-│   ├── single_linear_regression.py
-│   ├── results/
-│       ├── actual_vs_predicted.png
-│       ├── correlation_matrix.png 
-│       ├── scatter_plot_valence_vs_danceability.png
-│
-├── multiple_linear_regression_2vars/
-│   ├── multiple_linear_regression_2vars.py
-│   ├── results/
-│       ├── actual_vs_predicted_3d.png
-│       ├── regression_plane_3d_plot.png
-│
-├── multiple_linear_regression_more_vars/
-│   ├── multiple_linear_regression_more_vars.py
-│   ├── results/
-│       ├── actual_vs_predicted.png
-│       ├── correlation_matrix.png
-│       ├── scatter_plot_speechiness_vs_valence.png
-│
-└── docs/                      
-    ├── single_linear_regression.md
-    ├── multiple_linear_regression_2vars.md
-    ├── multiple_linear_regression_more_vars.md
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── data/
+│   └── dataset.csv
+├── single_linear_regression.ipynb
+├── multiple_linear_regression_2vars.ipynb
+└── multiple_linear_regression_more_vars.ipynb
+```
 
+### File Descriptions
+- **`data/dataset.csv`**: Contains the Spotify data used in the analysis.
+- **`single_linear_regression.ipynb`**: Demonstrates a single-variable linear regression model.
+- **`multiple_linear_regression_2vars.ipynb`**: Explores a linear regression model with two variables.
+- **`multiple_linear_regression_more_vars.ipynb`**: Applies a linear regression model with multiple variables.
+
+---
+
+## Requirements
+
+To run the Jupyter Notebooks, you need the following dependencies:
+- Python 3.8 or higher
+- Jupyter Notebook or JupyterLab
+- Libraries listed in `requirements.txt`
+
+Install the dependencies using pip:
+```bash
+pip install -r requirements.txt
 ```
 
 ---
 
-## Repository Structure 
-- `data/`: Contains the dataset used for analysis.
-- `single_linear_regression/`: Contains the script and results for single linear regression analysis.
-- `multiple_linear_regression_2vars/`: Contains the script and results for multiple linear regression with 2 variables.
-- `multiple_linear_regression_more_vars/`: Contains the script and results for multiple linear regression with more than 2 variables.
-- `docs/`: Additional documentation explaining each analysis
+## Running the Notebooks
 
-## Setup Instructions 
 1. Clone the repository:
-   ```sh
+   ```bash
    git clone https://github.com/nurulashraf/linear-regression-spotify.git
-
-2. Navigate to the project directory:
-   ```sh
    cd linear-regression-spotify
-   
-3. Install the required libraries:
-   ```sh
-   pip install -r requirements.txt
+   ```
 
-## Running the Analyses
+2. Launch Jupyter Notebook or JupyterLab:
+   ```bash
+   jupyter notebook
+   ```
+   or
+   ```bash
+   jupyter lab
+   ```
+
+3. Open the desired `.ipynb` file in your browser.
+
+4. Run the cells sequentially to reproduce the results.
+
+---
+
+## Analysis Overview
 
 ### Single Linear Regression
+This notebook examines the relationship between one independent variable and a dependent variable using a simple linear regression model.
 
-Navigate to the `single_linear_regression` directory and run the script:
-```sh
-python single_linear_regression.py
-```
-### Multiple Linear Regression (2 variables)
-Navigate to the `multiple_linear_regression_2vars` directory and run the script:
-```sh
-python multiple_linear_regression_2vars.py
-```
-### Multiple Linear Regression (more than 2 variables)
-Navigate to the `multiple_linear_regression_more_vars` directory and run the script:
-```sh
-python multiple_linear_regression_more_vars.py
-```
+### Multiple Linear Regression (2 Variables)
+This notebook expands the analysis by including two independent variables in the model.
 
-## **Dependencies**
-The following Python libraries are required:
-- `numpy`
-- `pandas`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
+### Multiple Linear Regression (More Variables)
+This notebook builds a comprehensive model using multiple independent variables to predict the dependent variable.
 
 ---
 
-## **About This Project**
-This project demonstrates my skills in:
-- Building and evaluating regression models
-- Modularising code for reusability
-- Presenting results in a clear and concise format
+## Dataset
 
+The dataset is stored in the `data/dataset.csv` file. It contains the necessary features for performing the analysis. If you use a custom dataset, ensure it follows the same format.
+
+---
+
+## Visualisations
+
+The Jupyter Notebooks include various visualisations to aid understanding:
+- Scatter plots
+- Regression lines
+- Residual plots
+- Metrics comparison charts
+
+---
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
+
+---
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-Feel free to explore the repository and contact me for further discussion!
+This project is licensed under the terms of the [MIT License](LICENSE).
+
+---
+
+### Author
+
+Created by **Nurul Ashraf**.
+
+If you find this project helpful, please ⭐ the repository!
