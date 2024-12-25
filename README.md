@@ -80,7 +80,7 @@ This notebook builds a comprehensive model using multiple independent variables 
 
 ## Dataset
 
-The dataset is stored in the `data/dataset.csv` file. It contains the necessary features for performing the analysis. If you use a custom dataset, ensure it follows the same format.
+The dataset is stored in the `data/spotify_track.csv` file. It contains the necessary features for performing the analysis. If you use a custom dataset, ensure it follows the same format.
 
 ---
 
