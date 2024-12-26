@@ -15,14 +15,14 @@ linear-regression-spotify/
 ├── data/                                               # Directory for datasets
 │   └── spotify_track.csv                               # Dataset file
 ├── src/                                                # Source code directory
-│   ├── single_linear_regression.ipynb                  
+│   ├── simple_linear_regression.ipynb                  
 │   ├── multiple_linear_regression_2vars.ipynb           
 │   └── multiple_linear_regression_more_vars.ipynb      
 ```
 
 ### File Descriptions
 - **`data/spotify_track.csv`**: Contains the Spotify data used in the analysis.
-- **`src/single_linear_regression.ipynb`**: Demonstrates a single-variable linear regression model.
+- **`src/simple_linear_regression.ipynb`**: Demonstrates a single-variable linear regression model.
 - **`src/multiple_linear_regression_2vars.ipynb`**: Explores a linear regression model with two variables.
 - **`src/multiple_linear_regression_more_vars.ipynb`**: Applies a linear regression model with multiple variables.
 
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 
 ## Analysis Overview
 
-### Single Linear Regression
+### Simple Linear Regression
 This notebook examines the relationship between one independent variable and a dependent variable using a simple linear regression model.
 
 ### Multiple Linear Regression (2 Variables)
